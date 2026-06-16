@@ -14,8 +14,21 @@ class Kalkulator:
 
 angka_1 = float(input("Masukkan angka pertama: "))
 angka_2 = float(input("Masukkan angka kedua: "))
+
 k = Kalkulator (angka_1,angka_2)
-print(k.tambah())
-print(k.kurang())
-print(k.bagi())
-print(k.kali())
+
+
+aritmatika = input("Pilih Operasi (tambah/kurang/kali/bagi)").lower()
+if aritmatika == "tambah":
+    print (k.tambah())
+elif aritmatika == "kurang":
+    print(k.kurang())
+    
+elif aritmatika == "bagi":
+    print(k.bagi())
+    
+elif aritmatika == "kali":
+    print(k.kali())
+else:
+    print("Pilhan tidak valid")
+    
