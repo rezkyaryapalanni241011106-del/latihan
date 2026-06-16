@@ -11,8 +11,10 @@ class Kalkulator:
         return self.angka_1 / self.angka_2
     def kali (self):
         return self.angka_1 * self.angka_2
-    
-k = Kalkulator (10,6)
+
+angka_1 = float(input("Masukkan angka pertama: "))
+angka_2 = float(input("Masukkan angka kedua: "))
+k = Kalkulator (angka_1,angka_2)
 print(k.tambah())
 print(k.kurang())
 print(k.bagi())
